@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?><!-- https://developer.android.com/training/articles/security-config -->
+<network-security-config>
+    <!--  we enable clear text traffic for flipper in debug mode  -->
+    <base-config cleartextTrafficPermitted="false">
+        <trust-anchors>
+            <!-- <certificates src="user" /> -->
+            <certificates src="system" />
+            <!--        <certificates src="@raw/pinned_public_key" />-->
+        </trust-anchors>
+    </base-config>
+</network-security-config>
